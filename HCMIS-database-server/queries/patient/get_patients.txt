@@ -1,0 +1,15 @@
+SELECT 
+    I.ID,
+    I.Fullname,
+    I.Gender,
+    I.Birthday,
+    I.Address,
+    I.Bloodtype,
+    I.MartialStatus,
+    I.NumberOfKids,
+    C.Email,
+    C.PhoneNumber
+FROM
+    PatientInformation I
+INNER JOIN PatientContact C
+    ON I.ID = C.ID;

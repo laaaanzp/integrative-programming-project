@@ -1,0 +1,18 @@
+SELECT 
+    I.ID,
+    I.FirstName,
+    I.MiddleName,
+    I.LastName,
+    I.Position,
+    C.Email,
+    C.PhoneNumber,
+    A.Username,
+    A.Password
+FROM
+    EmployeeInformation I
+INNER JOIN EmployeeContact C
+    ON I.ID = C.ID
+INNER JOIN EmployeeAccount A
+    ON C.ID = A.ID
+WHERE
+    A.Username = '@USERNAME' AND A.Password = '@PASSWORD';

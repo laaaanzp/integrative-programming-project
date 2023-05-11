@@ -1,0 +1,6 @@
+{
+"Type":"NETWORK",
+"Path": "http://127.0.0.1:5000/",
+"ConnectionString":null,
+"SQLFiles": "C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Debug\net6.0-windows\SQLFiles"
+}

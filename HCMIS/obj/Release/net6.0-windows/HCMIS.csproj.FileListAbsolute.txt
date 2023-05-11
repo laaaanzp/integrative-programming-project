@@ -1,0 +1,102 @@
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.exe
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.deps.json
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.runtimeconfig.json
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.pdb
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\System.ServiceProcess.ServiceController.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\Topshelf.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\TopShelf.ServiceInstaller.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.csproj.AssemblyReference.cache
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomTextBox.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.OptionPanel.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.LoginForm.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.MainMenuForm.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Properties.Resources.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.csproj.GenerateResource.cache
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.AssemblyInfoInputs.cache
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.AssemblyInfo.cs
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.csproj.CoreCompileInputs.cache
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.csproj.CopyComplete
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\refint\HCMIS.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.pdb
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.genruntimeconfig.cache
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\ref\HCMIS.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.DashboardPanel.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomDatePicker.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomNumericUpDown.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\bin\Release\net6.0-windows\itextsharp.dll
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomComboBox.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomNumericTextBox.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components._customComboBox.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.EmployeeListPanel.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.PatientListPanel.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.QueueListPanel.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.RecordListPanel.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Base.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.AddEmployeeForm.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.AddQueueForm.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.ApproveQueueForm.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.PatientProfileForm.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.RegisterPatient.resources
+C:\Users\Kurumi\source\repos\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.SelectPatientForm.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.exe
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\itextsharp.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\System.ServiceProcess.ServiceController.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\Topshelf.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\TopShelf.ServiceInstaller.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomComboBox.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomDatePicker.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomNumericTextBox.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomNumericUpDown.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.CustomTextBox.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.OptionPanel.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components._customComboBox.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.DashboardPanel.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.EmployeeListPanel.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.PatientListPanel.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.QueueListPanel.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Components.RecordListPanel.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Base.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.AddEmployeeForm.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.AddQueueForm.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.ApproveQueueForm.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.PatientProfileForm.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.RegisterPatient.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.SelectPatientForm.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.LoginForm.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.MainMenuForm.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\refint\HCMIS.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.pdb
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.deps.json
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.runtimeconfig.json
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.dll
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\bin\Release\net6.0-windows\HCMIS.pdb
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\HCMIS.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\Boss P\HCMIS\HCMIS\obj\Release\net6.0-windows\ref\HCMIS.dll

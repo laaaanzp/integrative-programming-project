@@ -1,0 +1,14 @@
+[
+  {
+    "JobPosition": "Nurse",
+    "Options": [ "Dashboard", "Queue", "Records", "Patients" ]
+  },
+  {
+    "JobPosition": "Doctor",
+    "Options": [ "Dashboard", "Queue", "Records" ]
+  },
+  {
+    "JobPosition": "Barangay_Health_Worker",
+    "Options": [ "Dashboard", "Records", "Patients" ]
+  }
+]

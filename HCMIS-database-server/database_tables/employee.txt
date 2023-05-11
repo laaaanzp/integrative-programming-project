@@ -1,0 +1,19 @@
+CREATE TABLE EmployeeInformation(
+    ID          SMALLINT        PRIMARY KEY     IDENTITY(1, 1),
+    FirstName   VARCHAR(50)     NOT NULL,
+    MiddleName  VARCHAR(50),
+    LastName    VARCHAR(50)     NOT NULL,
+    Position    VARCHAR(10)
+);
+|
+CREATE TABLE EmployeeContact(
+    ID          SMALLINT        FOREIGN KEY     REFERENCES EmployeeInformation(ID) ON DELETE CASCADE,
+    Email       VARCHAR(250),
+    PhoneNumber VARCHAR(12)
+);
+|
+CREATE TABLE EmployeeAccount(
+    ID          SMALLINT        FOREIGN KEY     REFERENCES EmployeeInformation(ID) ON DELETE CASCADE,
+    Username    VARCHAR(50)     NOT NULL,
+    Password    VARCHAR(50)     NOT NULL
+);

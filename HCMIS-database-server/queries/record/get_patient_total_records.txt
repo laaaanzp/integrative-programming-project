@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS 'Total'
+FROM Record
+WHERE @PatientID=ID;

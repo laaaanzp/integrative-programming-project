@@ -1,0 +1,15 @@
+CREATE TABLE PatientInformation(
+    ID              INT             PRIMARY KEY     IDENTITY(1, 1),
+    Fullname        VARCHAR(100)    NOT NULL,
+    Gender          VARCHAR(6)      NOT NULL,
+    Birthday        DATETIME        NOT NULL,
+    Address         VARCHAR(150)    NOT NULL,
+    Bloodtype       VARCHAR(4)      NOT NULL,
+    MartialStatus   VARCHAR(20)     NOT NULL 
+);
+
+CREATE TABLE PatientContact(
+    ID          INT             FOREIGN KEY     REFERENCES PatientInformation(ID) ON DELETE CASCADE,
+    Email       VARCHAR(250),
+    PhoneNumber VARCHAR(12)
+);

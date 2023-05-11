@@ -1,0 +1,6 @@
+SELECT
+    ID, PatientID, BloodPressure, WeightKG, HeightFT, Reason
+FROM
+    Queue
+WHERE
+    @ID=ID;

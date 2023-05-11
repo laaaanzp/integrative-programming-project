@@ -1,0 +1,13 @@
+SELECT
+    ID,
+    PatientID,
+    VisitDateTime,
+    BloodPressure,
+    WeightKG,
+    HeightFT,
+    Reason,
+    AssignedWorker,
+    Remarks,
+    Deferred
+FROM Record
+WHERE @PatientID=PatientID;

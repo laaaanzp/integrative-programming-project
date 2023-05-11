@@ -1,0 +1,8 @@
+CREATE TABLE Queue(
+    ID              INT             PRIMARY KEY     IDENTITY(1, 1),
+    PatientID       INT             FOREIGN KEY     REFERENCES PatientInformation(ID) ON DELETE CASCADE,
+    BloodPressure   INT             NOT NULL,
+    WeightKG        DECIMAL(10, 2)  NOT NULL,
+    HeightFT        DECIMAL(10, 2)  NOT NULL,
+    Reason          VARCHAR(10)     NOT NULL
+);

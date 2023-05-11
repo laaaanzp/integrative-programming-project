@@ -1,0 +1,10 @@
+CREATE TABLE Record(
+    ID              INT             PRIMARY KEY     IDENTITY(1, 1),
+    PatientID       INT             FOREIGN KEY     REFERENCES PatientInformation(ID) ON DELETE CASCADE,
+    VisitDateTime   DATETIME        NOT NULL,
+    BloodPressure   INT             NOT NULL,
+    WeightKG        DECIMAL(10, 2)  NOT NULL,
+    HeightFT        DECIMAL(10, 2)  NOT NULL,
+    Reason          VARCHAR(10)     NOT NULL,
+    AssignedWorker  VARCHAR(100)    NOT NULL
+);
