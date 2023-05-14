@@ -60,7 +60,7 @@ namespace HCMIS.Components
                     );
             });
         }
-        
+
 
         private void removeRow()
         {
@@ -94,16 +94,16 @@ namespace HCMIS.Components
         protected override void OnVisibleChanged(EventArgs e)
         {
             base.OnVisibleChanged(e);
-            loadData();     
+            loadData();
         }
 
         private void onFilterTextboxValueChanged(object sender, EventArgs e)
         {
             for (int u = 0; u < tableGrid.RowCount; u++)
             {
-                string fullname =       (string)tableGrid.Rows[u].Cells[2].Value;
+                string fullname = (string)tableGrid.Rows[u].Cells[2].Value;
                 string assignedWorker = (string)tableGrid.Rows[u].Cells[5].Value;
-                string reason =         (string)tableGrid.Rows[u].Cells[6].Value;
+                string reason = (string)tableGrid.Rows[u].Cells[6].Value;
 
                 tableGrid.Rows[u].Visible =
                     fullname.Contains(

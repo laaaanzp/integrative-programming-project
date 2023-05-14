@@ -72,7 +72,7 @@ namespace HCMIS.Components
                 MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Warning
                 ) != DialogResult.OK) return;
-            
+
 
             DatabaseHandler.DB.RemoveEmployee(id);
             tableGrid.Rows.Remove(row);
@@ -80,7 +80,7 @@ namespace HCMIS.Components
 
         private void removeButton_Click(object sender, EventArgs e)
         {
-            removeRow();   
+            removeRow();
         }
 
         private void reloadDataButton_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace HCMIS.Components
         protected override void OnVisibleChanged(EventArgs e)
         {
             base.OnVisibleChanged(e);
-            loadData();     
+            loadData();
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace HCMIS.Components
             {
                 Globals.MainMenuFormRef.Opacity = .95;
 
-                if (form.ShowDialog() == DialogResult.OK) 
+                if (form.ShowDialog() == DialogResult.OK)
                     loadData();
             }
 

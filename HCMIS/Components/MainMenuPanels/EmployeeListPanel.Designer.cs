@@ -28,287 +28,276 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tableGrid = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MiddleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.JobPosition = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.removeButton = new System.Windows.Forms.Button();
-            this.reloadDataButton = new System.Windows.Forms.Button();
-            this.addButton = new System.Windows.Forms.Button();
-            this.printButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGrid)).BeginInit();
-            this.SuspendLayout();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            label1 = new Label();
+            tableGrid = new DataGridView();
+            ID = new DataGridViewTextBoxColumn();
+            FirstName = new DataGridViewTextBoxColumn();
+            MiddleName = new DataGridViewTextBoxColumn();
+            LastName = new DataGridViewTextBoxColumn();
+            JobPosition = new DataGridViewTextBoxColumn();
+            Username = new DataGridViewTextBoxColumn();
+            Password = new DataGridViewTextBoxColumn();
+            Email = new DataGridViewTextBoxColumn();
+            PhoneNumber = new DataGridViewTextBoxColumn();
+            removeButton = new Button();
+            reloadDataButton = new Button();
+            addButton = new Button();
+            printButton = new Button();
+            ((System.ComponentModel.ISupportInitialize)tableGrid).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(10, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 34);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Employee List";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label1.AutoSize = true;
+            label1.Font = new Font("Poppins SemiBold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ControlDarkDark;
+            label1.Location = new Point(10, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(146, 34);
+            label1.TabIndex = 0;
+            label1.Text = "Employee List";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableGrid
             // 
-            this.tableGrid.AllowUserToAddRows = false;
-            this.tableGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.tableGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.tableGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableGrid.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.tableGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.tableGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.tableGrid.ColumnHeadersHeight = 50;
-            this.tableGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.tableGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.FirstName,
-            this.MiddleName,
-            this.LastName,
-            this.JobPosition,
-            this.Username,
-            this.Password,
-            this.Email,
-            this.PhoneNumber});
-            this.tableGrid.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableGrid.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.tableGrid.Location = new System.Drawing.Point(13, 47);
-            this.tableGrid.MultiSelect = false;
-            this.tableGrid.Name = "tableGrid";
-            this.tableGrid.ReadOnly = true;
-            this.tableGrid.RowHeadersVisible = false;
-            this.tableGrid.RowHeadersWidth = 50;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.tableGrid.RowsDefaultCellStyle = dataGridViewCellStyle11;
-            this.tableGrid.RowTemplate.Height = 25;
-            this.tableGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tableGrid.Size = new System.Drawing.Size(1001, 569);
-            this.tableGrid.TabIndex = 1;
-            this.tableGrid.SelectionChanged += new System.EventHandler(this.tableGrid_SelectionChanged);
+            tableGrid.AllowUserToAddRows = false;
+            tableGrid.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(250, 250, 250);
+            tableGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            tableGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableGrid.BackgroundColor = Color.WhiteSmoke;
+            tableGrid.BorderStyle = BorderStyle.None;
+            tableGrid.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            tableGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            tableGrid.ColumnHeadersHeight = 50;
+            tableGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            tableGrid.Columns.AddRange(new DataGridViewColumn[] { ID, FirstName, MiddleName, LastName, JobPosition, Username, Password, Email, PhoneNumber });
+            tableGrid.Cursor = Cursors.Hand;
+            tableGrid.GridColor = Color.WhiteSmoke;
+            tableGrid.Location = new Point(13, 47);
+            tableGrid.MultiSelect = false;
+            tableGrid.Name = "tableGrid";
+            tableGrid.ReadOnly = true;
+            tableGrid.RowHeadersVisible = false;
+            tableGrid.RowHeadersWidth = 50;
+            dataGridViewCellStyle11.BackColor = Color.White;
+            dataGridViewCellStyle11.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle11.ForeColor = Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            tableGrid.RowsDefaultCellStyle = dataGridViewCellStyle11;
+            tableGrid.RowTemplate.Height = 25;
+            tableGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            tableGrid.Size = new Size(1001, 569);
+            tableGrid.TabIndex = 1;
+            tableGrid.SelectionChanged += tableGrid_SelectionChanged;
             // 
             // ID
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.ID.DefaultCellStyle = dataGridViewCellStyle2;
-            this.ID.FillWeight = 50F;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ID.Width = 50;
+            dataGridViewCellStyle2.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            ID.DefaultCellStyle = dataGridViewCellStyle2;
+            ID.FillWeight = 50F;
+            ID.HeaderText = "ID";
+            ID.Name = "ID";
+            ID.ReadOnly = true;
+            ID.SortMode = DataGridViewColumnSortMode.NotSortable;
+            ID.Width = 50;
             // 
             // FirstName
             // 
-            this.FirstName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.FirstName.DefaultCellStyle = dataGridViewCellStyle3;
-            this.FirstName.FillWeight = 120F;
-            this.FirstName.HeaderText = "First Name";
-            this.FirstName.Name = "FirstName";
-            this.FirstName.ReadOnly = true;
-            this.FirstName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            FirstName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            FirstName.DefaultCellStyle = dataGridViewCellStyle3;
+            FirstName.FillWeight = 120F;
+            FirstName.HeaderText = "First Name";
+            FirstName.Name = "FirstName";
+            FirstName.ReadOnly = true;
+            FirstName.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // MiddleName
             // 
-            this.MiddleName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.MiddleName.DefaultCellStyle = dataGridViewCellStyle4;
-            this.MiddleName.FillWeight = 120F;
-            this.MiddleName.HeaderText = "Middle Name";
-            this.MiddleName.Name = "MiddleName";
-            this.MiddleName.ReadOnly = true;
-            this.MiddleName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            MiddleName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            MiddleName.DefaultCellStyle = dataGridViewCellStyle4;
+            MiddleName.FillWeight = 120F;
+            MiddleName.HeaderText = "Middle Name";
+            MiddleName.Name = "MiddleName";
+            MiddleName.ReadOnly = true;
+            MiddleName.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // LastName
             // 
-            this.LastName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.LastName.DefaultCellStyle = dataGridViewCellStyle5;
-            this.LastName.FillWeight = 120F;
-            this.LastName.HeaderText = "Last Name";
-            this.LastName.Name = "LastName";
-            this.LastName.ReadOnly = true;
-            this.LastName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            LastName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle5.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            LastName.DefaultCellStyle = dataGridViewCellStyle5;
+            LastName.FillWeight = 120F;
+            LastName.HeaderText = "Last Name";
+            LastName.Name = "LastName";
+            LastName.ReadOnly = true;
+            LastName.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // JobPosition
             // 
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.JobPosition.DefaultCellStyle = dataGridViewCellStyle6;
-            this.JobPosition.FillWeight = 120F;
-            this.JobPosition.HeaderText = "Job Position";
-            this.JobPosition.Name = "JobPosition";
-            this.JobPosition.ReadOnly = true;
-            this.JobPosition.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.JobPosition.Width = 120;
+            dataGridViewCellStyle6.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            JobPosition.DefaultCellStyle = dataGridViewCellStyle6;
+            JobPosition.FillWeight = 120F;
+            JobPosition.HeaderText = "Job Position";
+            JobPosition.Name = "JobPosition";
+            JobPosition.ReadOnly = true;
+            JobPosition.SortMode = DataGridViewColumnSortMode.NotSortable;
+            JobPosition.Width = 120;
             // 
             // Username
             // 
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.Username.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Username.FillWeight = 120F;
-            this.Username.HeaderText = "Username";
-            this.Username.Name = "Username";
-            this.Username.ReadOnly = true;
-            this.Username.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Username.Width = 120;
+            dataGridViewCellStyle7.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            Username.DefaultCellStyle = dataGridViewCellStyle7;
+            Username.FillWeight = 120F;
+            Username.HeaderText = "Username";
+            Username.Name = "Username";
+            Username.ReadOnly = true;
+            Username.SortMode = DataGridViewColumnSortMode.NotSortable;
+            Username.Width = 120;
             // 
             // Password
             // 
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.Password.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Password.FillWeight = 120F;
-            this.Password.HeaderText = "Password";
-            this.Password.Name = "Password";
-            this.Password.ReadOnly = true;
-            this.Password.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Password.Width = 120;
+            dataGridViewCellStyle8.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            Password.DefaultCellStyle = dataGridViewCellStyle8;
+            Password.FillWeight = 120F;
+            Password.HeaderText = "Password";
+            Password.Name = "Password";
+            Password.ReadOnly = true;
+            Password.SortMode = DataGridViewColumnSortMode.NotSortable;
+            Password.Width = 120;
             // 
             // Email
             // 
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.Email.DefaultCellStyle = dataGridViewCellStyle9;
-            this.Email.FillWeight = 120F;
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Email.Width = 120;
+            dataGridViewCellStyle9.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            Email.DefaultCellStyle = dataGridViewCellStyle9;
+            Email.FillWeight = 120F;
+            Email.HeaderText = "Email";
+            Email.Name = "Email";
+            Email.ReadOnly = true;
+            Email.SortMode = DataGridViewColumnSortMode.NotSortable;
+            Email.Width = 120;
             // 
             // PhoneNumber
             // 
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.PhoneNumber.DefaultCellStyle = dataGridViewCellStyle10;
-            this.PhoneNumber.FillWeight = 110F;
-            this.PhoneNumber.HeaderText = "Phone Number";
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.ReadOnly = true;
-            this.PhoneNumber.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.PhoneNumber.Width = 110;
+            dataGridViewCellStyle10.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            PhoneNumber.DefaultCellStyle = dataGridViewCellStyle10;
+            PhoneNumber.FillWeight = 110F;
+            PhoneNumber.HeaderText = "Phone Number";
+            PhoneNumber.Name = "PhoneNumber";
+            PhoneNumber.ReadOnly = true;
+            PhoneNumber.SortMode = DataGridViewColumnSortMode.NotSortable;
+            PhoneNumber.Width = 110;
             // 
             // removeButton
             // 
-            this.removeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.removeButton.BackColor = System.Drawing.Color.LightCoral;
-            this.removeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.removeButton.FlatAppearance.BorderSize = 0;
-            this.removeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.removeButton.ForeColor = System.Drawing.Color.White;
-            this.removeButton.Location = new System.Drawing.Point(914, 622);
-            this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(100, 40);
-            this.removeButton.TabIndex = 11;
-            this.removeButton.Text = "REMOVE";
-            this.removeButton.UseVisualStyleBackColor = false;
-            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
+            removeButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            removeButton.BackColor = Color.LightCoral;
+            removeButton.Cursor = Cursors.Hand;
+            removeButton.FlatAppearance.BorderSize = 0;
+            removeButton.FlatStyle = FlatStyle.Flat;
+            removeButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            removeButton.ForeColor = Color.White;
+            removeButton.Location = new Point(914, 622);
+            removeButton.Name = "removeButton";
+            removeButton.Size = new Size(100, 40);
+            removeButton.TabIndex = 11;
+            removeButton.Text = "REMOVE";
+            removeButton.UseVisualStyleBackColor = false;
+            removeButton.Click += removeButton_Click;
             // 
             // reloadDataButton
             // 
-            this.reloadDataButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.reloadDataButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.reloadDataButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.reloadDataButton.FlatAppearance.BorderSize = 0;
-            this.reloadDataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reloadDataButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.reloadDataButton.ForeColor = System.Drawing.Color.White;
-            this.reloadDataButton.Location = new System.Drawing.Point(808, 622);
-            this.reloadDataButton.Name = "reloadDataButton";
-            this.reloadDataButton.Size = new System.Drawing.Size(100, 40);
-            this.reloadDataButton.TabIndex = 12;
-            this.reloadDataButton.Text = "RELOAD";
-            this.reloadDataButton.UseVisualStyleBackColor = false;
-            this.reloadDataButton.Click += new System.EventHandler(this.reloadDataButton_Click);
+            reloadDataButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            reloadDataButton.BackColor = Color.FromArgb(0, 192, 0);
+            reloadDataButton.Cursor = Cursors.Hand;
+            reloadDataButton.FlatAppearance.BorderSize = 0;
+            reloadDataButton.FlatStyle = FlatStyle.Flat;
+            reloadDataButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            reloadDataButton.ForeColor = Color.White;
+            reloadDataButton.Location = new Point(808, 622);
+            reloadDataButton.Name = "reloadDataButton";
+            reloadDataButton.Size = new Size(100, 40);
+            reloadDataButton.TabIndex = 12;
+            reloadDataButton.Text = "RELOAD";
+            reloadDataButton.UseVisualStyleBackColor = false;
+            reloadDataButton.Click += reloadDataButton_Click;
             // 
             // addButton
             // 
-            this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addButton.FlatAppearance.BorderSize = 0;
-            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(702, 622);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(100, 40);
-            this.addButton.TabIndex = 36;
-            this.addButton.Text = "ADD";
-            this.addButton.UseVisualStyleBackColor = false;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            addButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            addButton.BackColor = Color.FromArgb(128, 128, 255);
+            addButton.Cursor = Cursors.Hand;
+            addButton.FlatAppearance.BorderSize = 0;
+            addButton.FlatStyle = FlatStyle.Flat;
+            addButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            addButton.ForeColor = Color.White;
+            addButton.Location = new Point(702, 622);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(100, 40);
+            addButton.TabIndex = 36;
+            addButton.Text = "ADD";
+            addButton.UseVisualStyleBackColor = false;
+            addButton.Click += addButton_Click;
             // 
             // printButton
             // 
-            this.printButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.printButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.printButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.printButton.FlatAppearance.BorderSize = 0;
-            this.printButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.printButton.ForeColor = System.Drawing.Color.White;
-            this.printButton.Location = new System.Drawing.Point(13, 622);
-            this.printButton.Name = "printButton";
-            this.printButton.Size = new System.Drawing.Size(139, 40);
-            this.printButton.TabIndex = 56;
-            this.printButton.TabStop = false;
-            this.printButton.Text = "SAVE REPORT";
-            this.printButton.UseVisualStyleBackColor = false;
-            this.printButton.Click += new System.EventHandler(this.printButton_Click);
+            printButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            printButton.BackColor = Color.FromArgb(128, 128, 255);
+            printButton.Cursor = Cursors.Hand;
+            printButton.FlatAppearance.BorderSize = 0;
+            printButton.FlatStyle = FlatStyle.Flat;
+            printButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            printButton.ForeColor = Color.White;
+            printButton.Location = new Point(13, 622);
+            printButton.Name = "printButton";
+            printButton.Size = new Size(139, 40);
+            printButton.TabIndex = 56;
+            printButton.TabStop = false;
+            printButton.Text = "SAVE REPORT";
+            printButton.UseVisualStyleBackColor = false;
+            printButton.Visible = false;
+            printButton.Click += printButton_Click;
             // 
             // EmployeeListPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.printButton);
-            this.Controls.Add(this.addButton);
-            this.Controls.Add(this.reloadDataButton);
-            this.Controls.Add(this.removeButton);
-            this.Controls.Add(this.tableGrid);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "EmployeeListPanel";
-            this.Padding = new System.Windows.Forms.Padding(10);
-            this.Size = new System.Drawing.Size(1027, 675);
-            ((System.ComponentModel.ISupportInitialize)(this.tableGrid)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
+            Controls.Add(printButton);
+            Controls.Add(addButton);
+            Controls.Add(reloadDataButton);
+            Controls.Add(removeButton);
+            Controls.Add(tableGrid);
+            Controls.Add(label1);
+            Margin = new Padding(0);
+            Name = "EmployeeListPanel";
+            Padding = new Padding(10);
+            Size = new Size(1027, 675);
+            ((System.ComponentModel.ISupportInitialize)tableGrid).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

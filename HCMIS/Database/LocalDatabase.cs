@@ -70,7 +70,7 @@ namespace HCMIS.Database
                 {
                     while (reader.Read())
                     {
-                        var id = reader.GetInt32("ID");
+                        var id = reader.GetInt16("ID");
                         var firstName = reader.GetString("FirstName");
                         var middleName = reader.GetString("MiddleName");
                         var lastName = reader.GetString("LastName");
@@ -101,7 +101,7 @@ namespace HCMIS.Database
             {
                 connection.Open();
 
-                string query = $"SELECT I.ID, I.Fullname, I.Gender, I.Birthday, I.Address, I.Bloodtype, I.MartialStatus, I.NumberOfKids, C.Email, C.PhoneNumber FROM PatientInformation I INNER JOIN PatientContact C ON I.ID = C.ID WHERE {id} = I.ID;";
+                string query = $"SELECT I.ID, I.Fullname, I.Gender, I.Birthday, I.Address, I.Bloodtype, I.MaritalStatus, I.NumberOfKids, C.Email, C.PhoneNumber FROM PatientInformation I INNER JOIN PatientContact C ON I.ID = C.ID WHERE {id} = I.ID;";
                 SqlCommand command = new SqlCommand(query, connection);
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
@@ -141,7 +141,7 @@ namespace HCMIS.Database
             {
                 connection.Open();
 
-                string query = $"SELECT I.ID, I.Fullname, I.Gender, I.Birthday, I.Address, I.Bloodtype, I.MartialStatus, I.NumberOfKids, C.Email, C.PhoneNumber FROM PatientInformation I INNER JOIN PatientContact C ON I.ID = C.ID WHERE '{fullname}' = I.Fullname;";
+                string query = $"SELECT I.ID, I.Fullname, I.Gender, I.Birthday, I.Address, I.Bloodtype, I.MaritalStatus, I.NumberOfKids, C.Email, C.PhoneNumber FROM PatientInformation I INNER JOIN PatientContact C ON I.ID = C.ID WHERE '{fullname}' = I.Fullname;";
                 SqlCommand command = new SqlCommand(query, connection);
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
@@ -187,7 +187,7 @@ namespace HCMIS.Database
             {
                 connection.Open();
 
-                string query = $"SELECT I.ID, I.Fullname, I.Gender, I.Birthday, I.Address, I.Bloodtype, I.MartialStatus, I.NumberOfKids, C.Email, C.PhoneNumber FROM PatientInformation I INNER JOIN PatientContact C ON I.ID = C.ID";
+                string query = "SELECT I.ID, I.Fullname, I.Gender, I.Birthday, I.Address, I.Bloodtype, I.MaritalStatus, I.NumberOfKids, C.Email, C.PhoneNumber FROM PatientInformation I INNER JOIN PatientContact C ON I.ID = C.ID";
                 SqlCommand command = new SqlCommand(query, connection);
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
@@ -241,8 +241,8 @@ namespace HCMIS.Database
                         var id = reader.GetInt32("ID");
                         var patientID = reader.GetInt32("PatientID");
                         var bloodPressure = reader.GetInt32("BloodPressure");
-                        var weightKG = reader.GetDouble("WeightKG");
-                        var heightFT = reader.GetDouble("HeightFT");
+                        var weightKG = (double)reader.GetDecimal("WeightKG");
+                        var heightFT = (double)reader.GetDecimal("HeightFT");
                         var reason = reader.GetString("Reason");
 
                         queues.Add(
@@ -279,8 +279,8 @@ namespace HCMIS.Database
                         var patientID = reader.GetInt32("PatientID");
                         var visitDateTime = reader.GetDateTime("VisitDateTime");
                         var bloodPressure = reader.GetInt32("BloodPressure");
-                        var weightKG = reader.GetDouble("WeightKG");
-                        var heightFT = reader.GetDouble("HeightFT");
+                        var weightKG = (double)reader.GetDecimal("WeightKG");
+                        var heightFT = (double)reader.GetDecimal("HeightFT");
                         var reason = reader.GetString("Reason");
                         var assignedWorker = reader.GetString("AssignedWorker");
                         var remarks = reader.GetString("Remarks");
@@ -315,7 +315,7 @@ namespace HCMIS.Database
             {
                 connection.Open();
 
-                string query = $"SELECT ID, PatientID, VisitDateTime, BloodPressure, WeightKG, HeightFT, Reason, AssignedWorker, Remarks, Deferred FROM Record;";
+                string query = "SELECT ID, PatientID, VisitDateTime, BloodPressure, WeightKG, HeightFT, Reason, AssignedWorker, Remarks, Deferred FROM Record;";
                 SqlCommand command = new SqlCommand(query, connection);
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
@@ -325,8 +325,8 @@ namespace HCMIS.Database
                         var patientID = reader.GetInt32("PatientID");
                         var visitDateTime = reader.GetDateTime("VisitDateTime");
                         var bloodPressure = reader.GetInt32("BloodPressure");
-                        var weightKG = reader.GetDouble("WeightKG");
-                        var heightFT = reader.GetDouble("HeightFT");
+                        var weightKG = (double)reader.GetDecimal("WeightKG");
+                        var heightFT = (double)reader.GetDecimal("HeightFT");
                         var reason = reader.GetString("Reason");
                         var assignedWorker = reader.GetString("AssignedWorker");
                         var remarks = reader.GetString("Remarks");
@@ -366,7 +366,7 @@ namespace HCMIS.Database
                     if (!reader.Read())
                         return null;
 
-                    var id = reader.GetInt32("ID");
+                    var id = reader.GetInt16("ID");
                     var firstName = reader.GetString("FirstName");
                     var middleName = reader.GetString("MiddleName");
                     var lastName = reader.GetString("LastName");
@@ -444,7 +444,7 @@ namespace HCMIS.Database
             {
                 connection.Open();
 
-                string query = $"DELETE FROM EmployeeInformation WHERE {id} = @ID;)";
+                string query = $"DELETE FROM EmployeeInformation WHERE ID = {id};";
                 SqlCommand command = new SqlCommand(query, connection);
 
                 command.ExecuteNonQuery();
@@ -457,7 +457,7 @@ namespace HCMIS.Database
             {
                 connection.Open();
 
-                string query = $"DELETE FROM PatientInformation WHERE {id} = @ID;)";
+                string query = $"DELETE FROM PatientInformation WHERE ID = {id};";
                 SqlCommand command = new SqlCommand(query, connection);
 
                 command.ExecuteNonQuery();
@@ -470,7 +470,7 @@ namespace HCMIS.Database
             {
                 connection.Open();
 
-                string query = $"DELETE FROM Queue WHERE {id} = @ID;)";
+                string query = $"DELETE FROM Queue WHERE ID = {id};";
                 SqlCommand command = new SqlCommand(query, connection);
 
                 command.ExecuteNonQuery();
@@ -483,7 +483,7 @@ namespace HCMIS.Database
             {
                 connection.Open();
 
-                string query = $"DELETE FROM Record WHERE {id} = @ID;)";
+                string query = $"DELETE FROM Record WHERE ID = {id};";
                 SqlCommand command = new SqlCommand(query, connection);
 
                 command.ExecuteNonQuery();

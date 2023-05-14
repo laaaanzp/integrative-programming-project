@@ -28,332 +28,327 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tableGrid = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PatientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalVisit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.removeButton = new System.Windows.Forms.Button();
-            this.reloadDataButton = new System.Windows.Forms.Button();
-            this.maritalStatusLabel = new System.Windows.Forms.Label();
-            this.bloodTypeLabel = new System.Windows.Forms.Label();
-            this.birthdayLabel = new System.Windows.Forms.Label();
-            this.addressLabel = new System.Windows.Forms.Label();
-            this.phoneNumberLabel = new System.Windows.Forms.Label();
-            this.emailLabel = new System.Windows.Forms.Label();
-            this.genderLabel = new System.Windows.Forms.Label();
-            this.editButton = new System.Windows.Forms.Button();
-            this.addButton = new System.Windows.Forms.Button();
-            this.printButton = new System.Windows.Forms.Button();
-            this.viewProfileButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.tableGrid)).BeginInit();
-            this.SuspendLayout();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            label1 = new Label();
+            tableGrid = new DataGridView();
+            ID = new DataGridViewTextBoxColumn();
+            PatientName = new DataGridViewTextBoxColumn();
+            TotalVisit = new DataGridViewTextBoxColumn();
+            removeButton = new Button();
+            reloadDataButton = new Button();
+            maritalStatusLabel = new Label();
+            bloodTypeLabel = new Label();
+            birthdayLabel = new Label();
+            addressLabel = new Label();
+            phoneNumberLabel = new Label();
+            emailLabel = new Label();
+            genderLabel = new Label();
+            editButton = new Button();
+            addButton = new Button();
+            printButton = new Button();
+            viewProfileButton = new Button();
+            ((System.ComponentModel.ISupportInitialize)tableGrid).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(10, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 34);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Patient List";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label1.AutoSize = true;
+            label1.Font = new Font("Poppins SemiBold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ControlDarkDark;
+            label1.Location = new Point(10, 10);
+            label1.Name = "label1";
+            label1.Size = new Size(120, 34);
+            label1.TabIndex = 0;
+            label1.Text = "Patient List";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableGrid
             // 
-            this.tableGrid.AllowUserToAddRows = false;
-            this.tableGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.tableGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.tableGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableGrid.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.tableGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.tableGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.tableGrid.ColumnHeadersHeight = 50;
-            this.tableGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.tableGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.PatientName,
-            this.TotalVisit});
-            this.tableGrid.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableGrid.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.tableGrid.Location = new System.Drawing.Point(13, 47);
-            this.tableGrid.MultiSelect = false;
-            this.tableGrid.Name = "tableGrid";
-            this.tableGrid.ReadOnly = true;
-            this.tableGrid.RowHeadersVisible = false;
-            this.tableGrid.RowHeadersWidth = 50;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.tableGrid.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.tableGrid.RowTemplate.Height = 25;
-            this.tableGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tableGrid.Size = new System.Drawing.Size(479, 569);
-            this.tableGrid.TabIndex = 1;
-            this.tableGrid.SelectionChanged += new System.EventHandler(this.tableGrid_SelectionChanged);
+            tableGrid.AllowUserToAddRows = false;
+            tableGrid.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(250, 250, 250);
+            tableGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            tableGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            tableGrid.BackgroundColor = Color.WhiteSmoke;
+            tableGrid.BorderStyle = BorderStyle.None;
+            tableGrid.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            tableGrid.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            tableGrid.ColumnHeadersHeight = 50;
+            tableGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            tableGrid.Columns.AddRange(new DataGridViewColumn[] { ID, PatientName, TotalVisit });
+            tableGrid.Cursor = Cursors.Hand;
+            tableGrid.GridColor = Color.WhiteSmoke;
+            tableGrid.Location = new Point(13, 47);
+            tableGrid.MultiSelect = false;
+            tableGrid.Name = "tableGrid";
+            tableGrid.ReadOnly = true;
+            tableGrid.RowHeadersVisible = false;
+            tableGrid.RowHeadersWidth = 50;
+            dataGridViewCellStyle5.BackColor = Color.White;
+            dataGridViewCellStyle5.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            tableGrid.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            tableGrid.RowTemplate.Height = 25;
+            tableGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            tableGrid.Size = new Size(479, 569);
+            tableGrid.TabIndex = 1;
+            tableGrid.SelectionChanged += tableGrid_SelectionChanged;
             // 
             // ID
             // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            ID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle2.Format = "N0";
             dataGridViewCellStyle2.NullValue = null;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.ID.DefaultCellStyle = dataGridViewCellStyle2;
-            this.ID.FillWeight = 50F;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 50;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ID.Width = 50;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            ID.DefaultCellStyle = dataGridViewCellStyle2;
+            ID.FillWeight = 50F;
+            ID.HeaderText = "ID";
+            ID.MinimumWidth = 50;
+            ID.Name = "ID";
+            ID.ReadOnly = true;
+            ID.SortMode = DataGridViewColumnSortMode.NotSortable;
+            ID.Width = 50;
             // 
             // PatientName
             // 
-            this.PatientName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.PatientName.DefaultCellStyle = dataGridViewCellStyle3;
-            this.PatientName.FillWeight = 175F;
-            this.PatientName.HeaderText = "Patient Name";
-            this.PatientName.MinimumWidth = 175;
-            this.PatientName.Name = "PatientName";
-            this.PatientName.ReadOnly = true;
-            this.PatientName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            PatientName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            PatientName.DefaultCellStyle = dataGridViewCellStyle3;
+            PatientName.FillWeight = 175F;
+            PatientName.HeaderText = "Patient Name";
+            PatientName.MinimumWidth = 175;
+            PatientName.Name = "PatientName";
+            PatientName.ReadOnly = true;
+            PatientName.SortMode = DataGridViewColumnSortMode.NotSortable;
             // 
             // TotalVisit
             // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
-            this.TotalVisit.DefaultCellStyle = dataGridViewCellStyle4;
-            this.TotalVisit.HeaderText = "Total Visit";
-            this.TotalVisit.Name = "TotalVisit";
-            this.TotalVisit.ReadOnly = true;
+            dataGridViewCellStyle4.Font = new Font("Poppins", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(41, 193, 140);
+            TotalVisit.DefaultCellStyle = dataGridViewCellStyle4;
+            TotalVisit.HeaderText = "Total Visit";
+            TotalVisit.Name = "TotalVisit";
+            TotalVisit.ReadOnly = true;
             // 
             // removeButton
             // 
-            this.removeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.removeButton.BackColor = System.Drawing.Color.LightCoral;
-            this.removeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.removeButton.FlatAppearance.BorderSize = 0;
-            this.removeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removeButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.removeButton.ForeColor = System.Drawing.Color.White;
-            this.removeButton.Location = new System.Drawing.Point(914, 622);
-            this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(100, 40);
-            this.removeButton.TabIndex = 11;
-            this.removeButton.TabStop = false;
-            this.removeButton.Text = "REMOVE";
-            this.removeButton.UseVisualStyleBackColor = false;
-            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
+            removeButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            removeButton.BackColor = Color.LightCoral;
+            removeButton.Cursor = Cursors.Hand;
+            removeButton.FlatAppearance.BorderSize = 0;
+            removeButton.FlatStyle = FlatStyle.Flat;
+            removeButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            removeButton.ForeColor = Color.White;
+            removeButton.Location = new Point(914, 622);
+            removeButton.Name = "removeButton";
+            removeButton.Size = new Size(100, 40);
+            removeButton.TabIndex = 11;
+            removeButton.TabStop = false;
+            removeButton.Text = "REMOVE";
+            removeButton.UseVisualStyleBackColor = false;
+            removeButton.Click += removeButton_Click;
             // 
             // reloadDataButton
             // 
-            this.reloadDataButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.reloadDataButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.reloadDataButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.reloadDataButton.FlatAppearance.BorderSize = 0;
-            this.reloadDataButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reloadDataButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.reloadDataButton.ForeColor = System.Drawing.Color.White;
-            this.reloadDataButton.Location = new System.Drawing.Point(808, 622);
-            this.reloadDataButton.Name = "reloadDataButton";
-            this.reloadDataButton.Size = new System.Drawing.Size(100, 40);
-            this.reloadDataButton.TabIndex = 12;
-            this.reloadDataButton.TabStop = false;
-            this.reloadDataButton.Text = "RELOAD";
-            this.reloadDataButton.UseVisualStyleBackColor = false;
-            this.reloadDataButton.Click += new System.EventHandler(this.reloadDataButton_Click);
+            reloadDataButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            reloadDataButton.BackColor = Color.FromArgb(0, 192, 0);
+            reloadDataButton.Cursor = Cursors.Hand;
+            reloadDataButton.FlatAppearance.BorderSize = 0;
+            reloadDataButton.FlatStyle = FlatStyle.Flat;
+            reloadDataButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            reloadDataButton.ForeColor = Color.White;
+            reloadDataButton.Location = new Point(808, 622);
+            reloadDataButton.Name = "reloadDataButton";
+            reloadDataButton.Size = new Size(100, 40);
+            reloadDataButton.TabIndex = 12;
+            reloadDataButton.TabStop = false;
+            reloadDataButton.Text = "RELOAD";
+            reloadDataButton.UseVisualStyleBackColor = false;
+            reloadDataButton.Click += reloadDataButton_Click;
             // 
             // maritalStatusLabel
             // 
-            this.maritalStatusLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maritalStatusLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.maritalStatusLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.maritalStatusLabel.Location = new System.Drawing.Point(498, 215);
-            this.maritalStatusLabel.Name = "maritalStatusLabel";
-            this.maritalStatusLabel.Size = new System.Drawing.Size(516, 28);
-            this.maritalStatusLabel.TabIndex = 38;
-            this.maritalStatusLabel.Text = "Marital Status:";
+            maritalStatusLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            maritalStatusLabel.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            maritalStatusLabel.ForeColor = SystemColors.ControlDarkDark;
+            maritalStatusLabel.Location = new Point(498, 215);
+            maritalStatusLabel.Name = "maritalStatusLabel";
+            maritalStatusLabel.Size = new Size(516, 28);
+            maritalStatusLabel.TabIndex = 38;
+            maritalStatusLabel.Text = "Marital Status:";
             // 
             // bloodTypeLabel
             // 
-            this.bloodTypeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bloodTypeLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bloodTypeLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bloodTypeLabel.Location = new System.Drawing.Point(498, 187);
-            this.bloodTypeLabel.Name = "bloodTypeLabel";
-            this.bloodTypeLabel.Size = new System.Drawing.Size(516, 28);
-            this.bloodTypeLabel.TabIndex = 37;
-            this.bloodTypeLabel.Text = "Blood Type:";
+            bloodTypeLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            bloodTypeLabel.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            bloodTypeLabel.ForeColor = SystemColors.ControlDarkDark;
+            bloodTypeLabel.Location = new Point(498, 187);
+            bloodTypeLabel.Name = "bloodTypeLabel";
+            bloodTypeLabel.Size = new Size(516, 28);
+            bloodTypeLabel.TabIndex = 37;
+            bloodTypeLabel.Text = "Blood Type:";
             // 
             // birthdayLabel
             // 
-            this.birthdayLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.birthdayLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.birthdayLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.birthdayLabel.Location = new System.Drawing.Point(498, 159);
-            this.birthdayLabel.Name = "birthdayLabel";
-            this.birthdayLabel.Size = new System.Drawing.Size(516, 28);
-            this.birthdayLabel.TabIndex = 36;
-            this.birthdayLabel.Text = "Birthdate:";
+            birthdayLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            birthdayLabel.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            birthdayLabel.ForeColor = SystemColors.ControlDarkDark;
+            birthdayLabel.Location = new Point(498, 159);
+            birthdayLabel.Name = "birthdayLabel";
+            birthdayLabel.Size = new Size(516, 28);
+            birthdayLabel.TabIndex = 36;
+            birthdayLabel.Text = "Birthdate:";
             // 
             // addressLabel
             // 
-            this.addressLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.addressLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addressLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.addressLabel.Location = new System.Drawing.Point(498, 131);
-            this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(516, 28);
-            this.addressLabel.TabIndex = 35;
-            this.addressLabel.Text = "Address:";
+            addressLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            addressLabel.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            addressLabel.ForeColor = SystemColors.ControlDarkDark;
+            addressLabel.Location = new Point(498, 131);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new Size(516, 28);
+            addressLabel.TabIndex = 35;
+            addressLabel.Text = "Address:";
             // 
             // phoneNumberLabel
             // 
-            this.phoneNumberLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.phoneNumberLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.phoneNumberLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.phoneNumberLabel.Location = new System.Drawing.Point(498, 103);
-            this.phoneNumberLabel.Name = "phoneNumberLabel";
-            this.phoneNumberLabel.Size = new System.Drawing.Size(516, 28);
-            this.phoneNumberLabel.TabIndex = 34;
-            this.phoneNumberLabel.Text = "Phone Number: ";
+            phoneNumberLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            phoneNumberLabel.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            phoneNumberLabel.ForeColor = SystemColors.ControlDarkDark;
+            phoneNumberLabel.Location = new Point(498, 103);
+            phoneNumberLabel.Name = "phoneNumberLabel";
+            phoneNumberLabel.Size = new Size(516, 28);
+            phoneNumberLabel.TabIndex = 34;
+            phoneNumberLabel.Text = "Phone Number: ";
             // 
             // emailLabel
             // 
-            this.emailLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.emailLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.emailLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.emailLabel.Location = new System.Drawing.Point(498, 75);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(516, 28);
-            this.emailLabel.TabIndex = 33;
-            this.emailLabel.Text = "Email:";
+            emailLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            emailLabel.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            emailLabel.ForeColor = SystemColors.ControlDarkDark;
+            emailLabel.Location = new Point(498, 75);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new Size(516, 28);
+            emailLabel.TabIndex = 33;
+            emailLabel.Text = "Email:";
             // 
             // genderLabel
             // 
-            this.genderLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.genderLabel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.genderLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.genderLabel.Location = new System.Drawing.Point(498, 47);
-            this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(516, 28);
-            this.genderLabel.TabIndex = 32;
-            this.genderLabel.Text = "Gender:";
+            genderLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            genderLabel.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            genderLabel.ForeColor = SystemColors.ControlDarkDark;
+            genderLabel.Location = new Point(498, 47);
+            genderLabel.Name = "genderLabel";
+            genderLabel.Size = new Size(516, 28);
+            genderLabel.TabIndex = 32;
+            genderLabel.Text = "Gender:";
             // 
             // editButton
             // 
-            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.editButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editButton.FlatAppearance.BorderSize = 0;
-            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.editButton.ForeColor = System.Drawing.Color.White;
-            this.editButton.Location = new System.Drawing.Point(702, 622);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(100, 40);
-            this.editButton.TabIndex = 39;
-            this.editButton.TabStop = false;
-            this.editButton.Text = "EDIT";
-            this.editButton.UseVisualStyleBackColor = false;
+            editButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            editButton.BackColor = Color.FromArgb(192, 192, 0);
+            editButton.Cursor = Cursors.Hand;
+            editButton.FlatAppearance.BorderSize = 0;
+            editButton.FlatStyle = FlatStyle.Flat;
+            editButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            editButton.ForeColor = Color.White;
+            editButton.Location = new Point(702, 622);
+            editButton.Name = "editButton";
+            editButton.Size = new Size(100, 40);
+            editButton.TabIndex = 39;
+            editButton.TabStop = false;
+            editButton.Text = "EDIT";
+            editButton.UseVisualStyleBackColor = false;
             // 
             // addButton
             // 
-            this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.addButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addButton.FlatAppearance.BorderSize = 0;
-            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(596, 622);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(100, 40);
-            this.addButton.TabIndex = 40;
-            this.addButton.TabStop = false;
-            this.addButton.Text = "ADD";
-            this.addButton.UseVisualStyleBackColor = false;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            addButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            addButton.BackColor = Color.FromArgb(128, 128, 255);
+            addButton.Cursor = Cursors.Hand;
+            addButton.FlatAppearance.BorderSize = 0;
+            addButton.FlatStyle = FlatStyle.Flat;
+            addButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            addButton.ForeColor = Color.White;
+            addButton.Location = new Point(596, 622);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(100, 40);
+            addButton.TabIndex = 40;
+            addButton.TabStop = false;
+            addButton.Text = "ADD";
+            addButton.UseVisualStyleBackColor = false;
+            addButton.Click += addButton_Click;
             // 
             // printButton
             // 
-            this.printButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.printButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.printButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.printButton.FlatAppearance.BorderSize = 0;
-            this.printButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.printButton.ForeColor = System.Drawing.Color.White;
-            this.printButton.Location = new System.Drawing.Point(13, 622);
-            this.printButton.Name = "printButton";
-            this.printButton.Size = new System.Drawing.Size(139, 40);
-            this.printButton.TabIndex = 56;
-            this.printButton.TabStop = false;
-            this.printButton.Text = "SAVE REPORT";
-            this.printButton.UseVisualStyleBackColor = false;
-            this.printButton.Click += new System.EventHandler(this.printButton_Click);
+            printButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            printButton.BackColor = Color.FromArgb(128, 128, 255);
+            printButton.Cursor = Cursors.Hand;
+            printButton.FlatAppearance.BorderSize = 0;
+            printButton.FlatStyle = FlatStyle.Flat;
+            printButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            printButton.ForeColor = Color.White;
+            printButton.Location = new Point(13, 622);
+            printButton.Name = "printButton";
+            printButton.Size = new Size(139, 40);
+            printButton.TabIndex = 56;
+            printButton.TabStop = false;
+            printButton.Text = "SAVE REPORT";
+            printButton.UseVisualStyleBackColor = false;
+            printButton.Visible = false;
+            printButton.Click += printButton_Click;
             // 
             // viewProfileButton
             // 
-            this.viewProfileButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.viewProfileButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.viewProfileButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewProfileButton.FlatAppearance.BorderSize = 0;
-            this.viewProfileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewProfileButton.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.viewProfileButton.ForeColor = System.Drawing.Color.White;
-            this.viewProfileButton.Location = new System.Drawing.Point(440, 622);
-            this.viewProfileButton.Name = "viewProfileButton";
-            this.viewProfileButton.Size = new System.Drawing.Size(150, 40);
-            this.viewProfileButton.TabIndex = 57;
-            this.viewProfileButton.TabStop = false;
-            this.viewProfileButton.Text = "VIEW PROFILE";
-            this.viewProfileButton.UseVisualStyleBackColor = false;
-            this.viewProfileButton.Click += new System.EventHandler(this.viewProfileButton_Click);
+            viewProfileButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            viewProfileButton.BackColor = Color.FromArgb(0, 192, 192);
+            viewProfileButton.Cursor = Cursors.Hand;
+            viewProfileButton.FlatAppearance.BorderSize = 0;
+            viewProfileButton.FlatStyle = FlatStyle.Flat;
+            viewProfileButton.Font = new Font("Poppins", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            viewProfileButton.ForeColor = Color.White;
+            viewProfileButton.Location = new Point(440, 622);
+            viewProfileButton.Name = "viewProfileButton";
+            viewProfileButton.Size = new Size(150, 40);
+            viewProfileButton.TabIndex = 57;
+            viewProfileButton.TabStop = false;
+            viewProfileButton.Text = "VIEW PROFILE";
+            viewProfileButton.UseVisualStyleBackColor = false;
+            viewProfileButton.Click += viewProfileButton_Click;
             // 
             // PatientListPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.viewProfileButton);
-            this.Controls.Add(this.printButton);
-            this.Controls.Add(this.addButton);
-            this.Controls.Add(this.editButton);
-            this.Controls.Add(this.maritalStatusLabel);
-            this.Controls.Add(this.bloodTypeLabel);
-            this.Controls.Add(this.birthdayLabel);
-            this.Controls.Add(this.addressLabel);
-            this.Controls.Add(this.phoneNumberLabel);
-            this.Controls.Add(this.emailLabel);
-            this.Controls.Add(this.genderLabel);
-            this.Controls.Add(this.reloadDataButton);
-            this.Controls.Add(this.removeButton);
-            this.Controls.Add(this.tableGrid);
-            this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(0);
-            this.Name = "PatientListPanel";
-            this.Padding = new System.Windows.Forms.Padding(10);
-            this.Size = new System.Drawing.Size(1027, 675);
-            ((System.ComponentModel.ISupportInitialize)(this.tableGrid)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
+            Controls.Add(viewProfileButton);
+            Controls.Add(printButton);
+            Controls.Add(addButton);
+            Controls.Add(editButton);
+            Controls.Add(maritalStatusLabel);
+            Controls.Add(bloodTypeLabel);
+            Controls.Add(birthdayLabel);
+            Controls.Add(addressLabel);
+            Controls.Add(phoneNumberLabel);
+            Controls.Add(emailLabel);
+            Controls.Add(genderLabel);
+            Controls.Add(reloadDataButton);
+            Controls.Add(removeButton);
+            Controls.Add(tableGrid);
+            Controls.Add(label1);
+            Margin = new Padding(0);
+            Name = "PatientListPanel";
+            Padding = new Padding(10);
+            Size = new Size(1027, 675);
+            ((System.ComponentModel.ISupportInitialize)tableGrid).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

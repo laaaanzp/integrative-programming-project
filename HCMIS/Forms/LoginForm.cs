@@ -33,7 +33,7 @@ namespace HCMIS
         {
             Cursor = Cursors.WaitCursor;
             Account account = new Account(
-                usernameTextBox.Value, 
+                usernameTextBox.Value,
                 passwordTextBox.Value
                 );
 
@@ -42,9 +42,9 @@ namespace HCMIS
             if (information is null)
             {
                 MessageBox.Show(
-                    "Invalid username or password!", 
-                    "Login Error", 
-                    MessageBoxButtons.OK, 
+                    "Invalid username or password!",
+                    "Login Error",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Error
                     );
                 return;
@@ -70,6 +70,11 @@ namespace HCMIS
         private void LoginForm_Shown(object sender, EventArgs e)
         {
             usernameTextBox.Focus();
+        }
+
+        private void usernameTextBox_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

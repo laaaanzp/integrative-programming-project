@@ -20,7 +20,7 @@ namespace HCMIS.Components
                 column.HeaderCell.Style.Font = new Font("Poppins SemiBold", 10, FontStyle.Bold, GraphicsUnit.Point);
             }
 
-            addButton.Visible = editButton.Visible = removeButton.Visible = 
+            addButton.Visible = editButton.Visible = removeButton.Visible =
                 Globals.LoggedInEmployee.Position == JobPosition.Admin ||
                 Globals.LoggedInEmployee.Position == JobPosition.Barangay_Health_Worker;
 
@@ -81,7 +81,7 @@ namespace HCMIS.Components
             }
 
             DatabaseHandler.DB.RemovePatient(id);
-            tableGrid.Rows.Remove(row);         
+            tableGrid.Rows.Remove(row);
         }
 
         private void removeButton_Click(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace HCMIS.Components
         protected override void OnVisibleChanged(EventArgs e)
         {
             base.OnVisibleChanged(e);
-            loadData();     
+            loadData();
         }
 
         private void addButton_Click(object sender, EventArgs e)

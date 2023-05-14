@@ -1,3 +1,4 @@
+DROP DATABASE HCMISDB;
 CREATE DATABASE HCMISDB;
 USE HCMISDB;
 
@@ -29,7 +30,8 @@ CREATE TABLE PatientInformation(
     Birthday        DATETIME        NOT NULL,
     Address         VARCHAR(150)    NOT NULL,
     Bloodtype       VARCHAR(4)      NOT NULL,
-    MartialStatus   VARCHAR(20)     NOT NULL 
+    MaritalStatus   VARCHAR(20)     NOT NULL,
+	NumberOfKids	INT				NOT NULL
 );
 
 CREATE TABLE PatientContact(
@@ -57,5 +59,23 @@ CREATE TABLE Record(
     WeightKG        DECIMAL(10, 2)  NOT NULL,
     HeightFT        DECIMAL(10, 2)  NOT NULL,
     Reason          VARCHAR(10)     NOT NULL,
-    AssignedWorker  VARCHAR(100)    NOT NULL
+    AssignedWorker  VARCHAR(100)    NOT NULL,
+    Remarks		    VARCHAR(1000)   NOT NULL,
+    Deferred        VARCHAR(3)      NOT NULL
 );
+
+INSERT INTO EmployeeInformation
+VALUES ('Admin', 'Admin', 'Admin', 'Admin');
+
+DECLARE @ID AS SMALLINT = SCOPE_IDENTITY();
+
+INSERT INTO EmployeeContact
+VALUES (@ID, 'admin@gmail.com', '09999999999');
+
+INSERT INTO EmployeeAccount
+VALUES (@ID, 'admin', 'admin');
+
+
+SELECT * FROM PatientInformation
+SELECT * FROM EmployeeContact
+SELECT * FROM EmployeeAccount
