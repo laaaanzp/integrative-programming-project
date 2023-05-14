@@ -10,7 +10,6 @@ namespace FinalsCollab
         [STAThread]
         static void Main()
         {
-            
             using (Mutex mutex = new Mutex(false, Assembly.GetEntryAssembly().GetName().Name))
             {
                 if (!mutex.WaitOne(0))
@@ -49,10 +48,9 @@ namespace FinalsCollab
                     Properties.Settings.Default.Save();
                     Application.Run(new LoginForm());
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     throw;
-                    Application.Exit();
                 }
                 finally
                 {

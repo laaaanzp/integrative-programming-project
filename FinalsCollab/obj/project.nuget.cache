@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fEdj6FAyelqb7aHYxZD/K5ZTTxk0XuKyDEXoUuPL2oN9sFiPK0v7r1hvg7ohzqbyqHftpiWzEzgPHOyt8WM/Hw==",
+  "dgSpecHash": "ycmPIZlGvgwyf2NQ9doLW27ois8NruOdt3C/WcMDvbvmwEVbwf1HmfHfnwMOF4ErT6/05ocZ8i4txPgFShQOUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\peloe\\Documents\\Dev\\FinalsCollab\\FinalsCollab.csproj",
+  "projectFilePath": "C:\\Users\\Kurumi\\Documents\\Dev\\C#\\Integrative Programming Project\\integrative-programming-project\\FinalsCollab\\FinalsCollab.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\peloe\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
-    "C:\\Users\\peloe\\.nuget\\packages\\simpletcp\\1.0.24\\simpletcp.1.0.24.nupkg.sha512"
+    "C:\\Users\\Kurumi\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Kurumi\\.nuget\\packages\\simpletcp\\1.0.24\\simpletcp.1.0.24.nupkg.sha512"
   ],
   "logs": [
     {

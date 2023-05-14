@@ -77,23 +77,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\peloe\\.nuget\\packages\\": {},
+    "C:\\Users\\Kurumi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\peloe\\Documents\\Dev\\FinalsCollab\\FinalsCollab.csproj",
+      "projectUniqueName": "C:\\Users\\Kurumi\\Documents\\Dev\\C#\\Integrative Programming Project\\integrative-programming-project\\FinalsCollab\\FinalsCollab.csproj",
       "projectName": "FinalsCollab",
-      "projectPath": "C:\\Users\\peloe\\Documents\\Dev\\FinalsCollab\\FinalsCollab.csproj",
-      "packagesPath": "C:\\Users\\peloe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\peloe\\Documents\\Dev\\FinalsCollab\\obj\\",
+      "projectPath": "C:\\Users\\Kurumi\\Documents\\Dev\\C#\\Integrative Programming Project\\integrative-programming-project\\FinalsCollab\\FinalsCollab.csproj",
+      "packagesPath": "C:\\Users\\Kurumi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kurumi\\Documents\\Dev\\C#\\Integrative Programming Project\\integrative-programming-project\\FinalsCollab\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\peloe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kurumi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
