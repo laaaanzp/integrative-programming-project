@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Forms\DialogPanels\**" />
+    <EmbeddedResource Remove="Forms\DialogPanels\**" />
+    <None Remove="Forms\DialogPanels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CustomControls\CNumericTextbox2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControls\CPasswordTextbox.cs" />
+    <Compile Update="CustomControls\CNumericTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControls\CMultiLineTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Forms\DialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\DialogForms\NotesAndRemarksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\DialogForms\DialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\DialogForms\PatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\DialogForms\QueueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Models\DashboardInformation\" />
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="SimpleTCP" Version="1.0.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

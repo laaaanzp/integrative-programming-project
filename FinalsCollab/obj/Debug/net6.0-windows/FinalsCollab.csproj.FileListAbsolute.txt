@@ -1,0 +1,126 @@
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.exe
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.deps.json
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.runtimeconfig.json
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.dll
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.pdb
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.AssemblyReference.cache
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.LoginForm.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.GenerateResource.cache
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.AssemblyInfoInputs.cache
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.AssemblyInfo.cs
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.CoreCompileInputs.cache
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.dll
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\refint\FinalsCollab.dll
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.pdb
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.genruntimeconfig.cache
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\ref\FinalsCollab.dll
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CTextbox.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CPasswordTextbox.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Properties.Resources.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.MenuForm.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CDashboardContent.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.COptionPanel.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.DashboardPanel.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.dll.config
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CButton.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.EmployeeListPanel.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.PatientListPanel.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.QueueListPanel.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.RecordListPanel.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\SimpleTCP.dll
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.CopyComplete
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.DialogBase.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CComboBox.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CDatePicker.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CNumericTextbox.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.ProfileForm.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CMultiLineTextbox.resources
+C:\Users\Kurumi\source\repos\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.NotesAndRemarksForm.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.AssemblyReference.cache
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CButton.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CComboBox.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CDashboardContent.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CDatePicker.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CMultiLineTextbox.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CNumericTextbox.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.COptionPanel.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CPasswordTextbox.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CTextbox.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.DashboardPanel.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.EmployeeListPanel.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.PatientListPanel.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.QueueListPanel.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.RecordListPanel.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.DialogBase.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.NotesAndRemarksForm.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.ProfileForm.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.LoginForm.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.MenuForm.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Properties.Resources.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.GenerateResource.cache
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.AssemblyInfoInputs.cache
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.AssemblyInfo.cs
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.CoreCompileInputs.cache
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.dll
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\refint\FinalsCollab.dll
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.pdb
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.exe
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.dll.config
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.deps.json
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.runtimeconfig.json
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.dll
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.pdb
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\bin\Debug\net6.0-windows\SimpleTCP.dll
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.CopyComplete
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.genruntimeconfig.cache
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\ref\FinalsCollab.dll
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.PatientForm.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CNumericTextbox2.resources
+C:\Users\Mark Edison\Documents\Dev\FinalsCollab\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.QueueForm.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.dll
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\refint\FinalsCollab.dll
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.pdb
+C:\Users\peloe\Documents\Dev\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.exe
+C:\Users\peloe\Documents\Dev\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.dll.config
+C:\Users\peloe\Documents\Dev\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.deps.json
+C:\Users\peloe\Documents\Dev\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.runtimeconfig.json
+C:\Users\peloe\Documents\Dev\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.dll
+C:\Users\peloe\Documents\Dev\FinalsCollab\bin\Debug\net6.0-windows\FinalsCollab.pdb
+C:\Users\peloe\Documents\Dev\FinalsCollab\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\peloe\Documents\Dev\FinalsCollab\bin\Debug\net6.0-windows\SimpleTCP.dll
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.AssemblyReference.cache
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CButton.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CComboBox.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CDashboardContent.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CDatePicker.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CMultiLineTextbox.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CNumericTextbox.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CNumericTextbox2.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.COptionPanel.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CPasswordTextbox.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.CustomControls.CTextbox.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.DashboardPanel.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.EmployeeListPanel.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.PatientListPanel.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.QueueListPanel.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.ContentPanels.RecordListPanel.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.DialogBase.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.NotesAndRemarksForm.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.PatientForm.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.ProfileForm.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.DialogForms.QueueForm.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.LoginForm.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Forms.MenuForm.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.Properties.Resources.resources
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.GenerateResource.cache
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.AssemblyInfoInputs.cache
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.AssemblyInfo.cs
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.CoreCompileInputs.cache
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.csproj.CopyComplete
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\FinalsCollab.genruntimeconfig.cache
+C:\Users\peloe\Documents\Dev\FinalsCollab\obj\Debug\net6.0-windows\ref\FinalsCollab.dll
