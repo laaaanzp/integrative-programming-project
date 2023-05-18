@@ -1,10 +1,6 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FinalsCollab.Globals;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace FinalsCollab.Models
 {
@@ -16,59 +12,137 @@ namespace FinalsCollab.Models
         public Account Account;
         public Contact Contact;
 
-        public static EmployeeInformation FromJObject(JObject o)
+        public EmployeeInformation(int id, Name name, string position, Account account, Contact contact) 
+        { 
+            ID = id;
+            Name = name;
+            Position = position;
+            Account = account;
+            Contact = contact;
+        }
+
+        private static EmployeeInformation Parse(SqlDataReader reader)
         {
-            return new EmployeeInformation()
-            { 
-                ID = o["id"].ToObject<int>(),
-                Name = new Name()
+            var id = reader.GetInt16("id");
+            var firstName = reader.GetString("firstname");
+            var middleName = reader.GetString("middlename");
+            var lastName = reader.GetString("lastname");
+            var position = reader.GetString("position");
+            var email = reader.GetString("email");
+            var phone = reader.GetString("phone");
+            var username = reader.GetString("username");
+            var password = reader.GetString("password");
+
+            return new EmployeeInformation
+            (
+                id,
+                new Name(firstName, middleName, lastName),
+                position,
+                new Account(username, password),
+                new Contact(email, phone)
+            );
+        }
+
+        public static List<EmployeeInformation> GetEmployees()
+        {
+            List<EmployeeInformation> employees = new List<EmployeeInformation>();
+            using (SqlConnection connection = new SqlConnection(Config.ConnectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("GetEmployees", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    Firstname = o["name"]["firstname"].ToString(),
-                    Middlename = o["name"]["middlename"].ToString(),
-                    Lastname = o["name"]["lastname"].ToString()
-                },
-                Position = o["position"].ToString(),
-                Account = new Account()
-                {
-                    Username = o["account"]["username"].ToString(),
-                    Password = o["account"]["password"].ToString()
-                },
-                Contact = new Contact()
-                {
-                    Email = o["contact"]["email"].ToString(),
-                    Phone = o["contact"]["phone"].ToString()
+                    while (reader.Read())
+                    {
+                        var employee = Parse(reader);
+                        employees.Add(employee);
+                    }
                 }
-            };
+            }
+
+            return employees;
         }
 
-        public static EmployeeInformation FromDatabase(int id)
+        public static EmployeeInformation? GetEmployee(int id)
         {
-            return Database.DatabaseHandler.GetEmployee(id);
+            using (SqlConnection connection = new SqlConnection(Config.ConnectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("GetEmployee", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@id", id);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (!reader.Read())
+                        return null;
+
+                    return Parse(reader);
+                }
+            }
         }
 
-        public static List<EmployeeInformation> GetAllEmployees()
+        public static EmployeeInformation? GetEmployee(Account account)
         {
-            return Database.DatabaseHandler.GetEmployees();
+            using (SqlConnection connection = new SqlConnection(Config.ConnectionString))
+            {
+                GetEmployeesconnection.Open();
+
+                SqlCommand command = new SqlCommand("GetEmployee", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("@username", account.Username);
+                command.Parameters.AddWithValue("@password", account.Password);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (!reader.Read())
+                        return null;
+
+                    return Parse(reader);
+                }
+            }
         }
 
         public void AddToDatabase()
         {
-            ID = Database.DatabaseHandler.AddEmployee(this);
-        }
+            using (SqlConnection connection = new SqlConnection(Config.ConnectionString))
+            {
+                connection.Open();
 
-        public void UpdateToDatabase()
-        {
-            Database.DatabaseHandler.UpdateEmployee(this);
+                SqlCommand command = new SqlCommand("EmployeeRegister", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("@firstname", Name.Firstname);
+                command.Parameters.AddWithValue("@middlename", Name.Middlename);
+                command.Parameters.AddWithValue("@lastname", Name.Lastname);
+                command.Parameters.AddWithValue("@position", Position);
+                command.Parameters.AddWithValue("@email", Contact.Email);
+                command.Parameters.AddWithValue("@phone", Contact.Phone);
+                command.Parameters.AddWithValue("@username", Account.Username);
+                command.Parameters.AddWithValue("@password", Account.Password);
+
+                command.ExecuteNonQuery();
+            }
         }
 
         public void DeleteFromDatabase()
         {
-            Database.DatabaseHandler.DeleteEmployeeByID(this.ID);
-        }
+            using (SqlConnection connection = new SqlConnection(Config.ConnectionString))
+            {
+                connection.Open();
 
-        public static EmployeeInformation FromLogin(Account credentials)
-        {
-            return Database.DatabaseHandler.Login(credentials);
+                SqlCommand command = new SqlCommand("EmployeeDelete", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.AddWithValue("@id", ID);
+
+                command.ExecuteNonQuery();
+            }
         }
     }
 }

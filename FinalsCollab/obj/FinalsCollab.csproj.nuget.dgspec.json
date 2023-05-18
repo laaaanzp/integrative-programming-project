@@ -51,6 +51,10 @@
             "SimpleTCP": {
               "target": "Package",
               "version": "[1.0.24, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [

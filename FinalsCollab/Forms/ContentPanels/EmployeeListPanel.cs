@@ -1,4 +1,5 @@
-﻿using FinalsCollab.Forms.DialogForms;
+﻿using FinalsCollab.Database;
+using FinalsCollab.Forms.DialogForms;
 using FinalsCollab.Models;
 using Microsoft.VisualBasic.ApplicationServices;
 using Newtonsoft.Json.Linq;
@@ -23,10 +24,6 @@ namespace FinalsCollab.Forms.ContentPanels
         {
             InitializeComponent();
 
-            Database.SocketConnection.OnEmployeeListAdd += onAdd;
-            Database.SocketConnection.OnEmployeeListUpdate += onUpdate;
-            Database.SocketConnection.OnEmployeeListRemove += onRemove;
-
             loadData();
         }
 
@@ -38,24 +35,9 @@ namespace FinalsCollab.Forms.ContentPanels
         private void loadData()
         {
             dataGridView1.Rows.Clear();
-            List<EmployeeInformation> employees = EmployeeInformation.GetAllEmployees();
+            List<EmployeeInformation> employees = EmployeeInformation.GetEmployees();
 
             employees.ForEach(addEmployeeToTable);
-        }
-
-        private void onAdd(JObject value)
-        {
-            addEmployeeToTable(EmployeeInformation.FromJObject(value));
-        }
-
-        public void onRemove(JObject value)
-        {
-            removeEmployeeFromTableByID(value["id"].ToObject<int>());
-        }
-
-        private void onUpdate(JObject value)
-        {
-            updateEmployeeFromTable(EmployeeInformation.FromJObject(value));
         }
 
         private void addEmployeeToTable(EmployeeInformation employee)
@@ -109,7 +91,7 @@ namespace FinalsCollab.Forms.ContentPanels
             DataGridViewRow selectedRow = selectedRows[0];
             int id = (int)selectedRow.Cells[0].Value;
 
-            Database.DatabaseHandler.DeleteEmployeeByID(id);
+            LocalDatabase.DeleteEmployee(LocalDatabase.GetEmployee(id));
         }
 
         private void editButton_Click(object sender, EventArgs e)
@@ -121,7 +103,7 @@ namespace FinalsCollab.Forms.ContentPanels
             DataGridViewRow selectedRow = selectedRows[0];
             int id = (int)selectedRow.Cells[0].Value;
 
-            EmployeeInformation employee = EmployeeInformation.FromDatabase(id);
+            EmployeeInformation employee = EmployeeInformation.GetEmployee(id);
             Globals.AppState.MenuFormInstance.ShowFormDialog(new ProfileForm(employee));
         }
 
@@ -146,7 +128,7 @@ namespace FinalsCollab.Forms.ContentPanels
 
         private void printButton_Click(object sender, EventArgs e)
         {
-            string url = Database.DatabaseHandler.GetEmployeeReportURL();
+            // string url = Database.DatabaseHandler.GetEmployeeReportURL();
         }
     }
 }

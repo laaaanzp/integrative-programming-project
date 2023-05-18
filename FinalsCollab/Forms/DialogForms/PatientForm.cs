@@ -53,14 +53,14 @@ namespace FinalsCollab.Forms.DialogForms
         private void loadValue(PatientInformation patient)
         {
             idNumericTextbox.Value = patient.ID;
-            fullnameTextbox.Text = patient.Fullname;
+            fullnameTextbox.Text = patient.Name;
             birthdayTextbox.Text = patient.Birthday.ToString("MMMM d, yyyy");
 
             addressTextbox.Text = patient.Address;
             
 
             genderComboBox.Value = Globals.FuncTools.ToTitleCase(patient.Gender);
-            bloodtypeComboBox.Value = patient.BloodType;
+            bloodtypeComboBox.Value = patient.Bloodtype;
             maritalStatusComboBox.Value = Globals.FuncTools.ToTitleCase(patient.MaritalStatus);
             numberOfKidsNumericTextbox.Value = patient.NumberOfKids;
 
@@ -89,7 +89,7 @@ namespace FinalsCollab.Forms.DialogForms
                 switch (submitButton.Text)
                 {
                     case "SAVE":
-                        patient.UpdateToDatabase();
+                        // TODO: patient.UpdateToDatabase();
                         break;
                     case "ADD":
                         patient.AddToDatabase();
@@ -107,22 +107,22 @@ namespace FinalsCollab.Forms.DialogForms
 
         private PatientInformation getFormDetails()
         {
-            return new PatientInformation()
-            {
-                ID = (int)idNumericTextbox.Value,
-                Fullname = fullnameTextbox.Text,
-                Gender = genderComboBox.Value.ToLower(),
-                Address = addressTextbox.Text,
-                Birthday = DateTime.ParseExact(birthdayTextbox.Text, "MMMM d, yyyy", System.Globalization.CultureInfo.InvariantCulture),
-                BloodType = bloodtypeComboBox.Value,
-                MaritalStatus = maritalStatusComboBox.Value.ToLower(),
-                NumberOfKids = (int)numberOfKidsNumericTextbox.Value,
-                Contact = new Contact()
-                {
-                    Email = emailTextbox.Text,
-                    Phone = phoneNumericTextbox.Text
-                }
-            };
+            return new PatientInformation
+            (
+                (int)idNumericTextbox.Value,
+                fullnameTextbox.Text,
+                genderComboBox.Value.ToLower(),
+                addressTextbox.Text,
+                DateTime.ParseExact(birthdayTextbox.Text, "MMMM d, yyyy", CultureInfo.InvariantCulture),
+                bloodtypeComboBox.Value,
+                maritalStatusComboBox.Value.ToLower(),
+                (int)numberOfKidsNumericTextbox.Value,
+                new Contact
+                (
+                    emailTextbox.Text,
+                    phoneNumericTextbox.Text
+                )
+            );
         }
 
         private bool isFormValid()

@@ -20,9 +20,6 @@ namespace FinalsCollab.Forms.ContentPanels
 
             deleteButton.Enabled =
                 Globals.AppState.LoggedInEmployee.Position == "admin";
-
-            Database.SocketConnection.OnRecordListAdd += onAdd;
-            Database.SocketConnection.OnRecordListRemove += onRemove;
         }
 
         private void loadData()
@@ -33,33 +30,23 @@ namespace FinalsCollab.Forms.ContentPanels
             records.ForEach(addRecordToTable);
         }
 
-        private void onAdd(JObject value)
-        {
-            addRecordToTable(Record.FromJObject(value));
-        }
-
         private void addRecordToTable(Record record)
         {
             removeRecordFromTableByID(record.ID);
 
             dataGridView1.Rows.Add(
                 record.ID,
-                record.Fullname,
+                record.Patient.Name,
                 record.VisitDateTime.ToString("MMMM d, yyyy"),
                 record.VisitDateTime.ToString("hh:mm t"),
-                record.WorkerFullname,
+                record.AssignedWorker.Name.Fullname,
                 Globals.FuncTools.ToTitleCase(record.Reason),
-                record.PatientID,
+                record.Patient.ID,
                 record.BloodPressure,
                 record.WeightKG.ToString(),
                 record.HeightFT.ToString(),
                 record.Deferred ? "Yes" : "No"
                 );
-        }
-
-        public void onRemove(JObject value)
-        {
-            removeRecordFromTableByID(value["id"].ToObject<int>());
         }
 
         private void removeRecordFromTableByID(int id)

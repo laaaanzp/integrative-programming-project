@@ -102,7 +102,6 @@ namespace FinalsCollab.Forms
 
         public MenuForm()
         {
-            Database.SocketConnection.Connect();
             InitializeComponent();
 
             changeContentPanel("Dashboard");
@@ -119,18 +118,6 @@ namespace FinalsCollab.Forms
 
             updateProfileInformation();
             Globals.AppState.MenuFormInstance = this;
-
-            Database.SocketConnection.OnEmployeeListUpdate += onEmployeeUpdate;
-        }
-
-        private void onEmployeeUpdate(JObject value)
-        {
-            EmployeeInformation employee = EmployeeInformation.FromJObject(value);
-
-            if (employee.ID == Globals.AppState.LoggedInEmployee.ID)
-            {
-                updateProfileInformation();
-            }
         }
 
         private void updateProfileInformation()
@@ -141,7 +128,7 @@ namespace FinalsCollab.Forms
 
             nameLabel.Text = fullname;
             positionLabel.Text = position == "bhw" ? "BARANGAY HEALTH WORKER" : position.ToUpper();
-            profileImagePictureBox.Load(Database.DatabaseHandler.GetProfilePictureUrlByID(id));
+            // TODO: profileImagePictureBox.Load(Database.DatabaseHandler.GetProfilePictureUrlByID(id));
         }
 
         private void editButtonClick(object sender, EventArgs e)
@@ -151,12 +138,7 @@ namespace FinalsCollab.Forms
 
         private void logoutButtonClick(object sender, EventArgs e)
         {
-            Database.DatabaseHandler.Logout();
-            Database.SocketConnection.Disconnect();
             Globals.AppState.LoggedInEmployee = null;
-            Properties.Settings.Default.Username = "";
-            Properties.Settings.Default.Password = "";
-            Properties.Settings.Default.Save();
             new LoginForm().Show();
             Hide();
         }

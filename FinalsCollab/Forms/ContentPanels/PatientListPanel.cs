@@ -19,9 +19,6 @@ namespace FinalsCollab.Forms.ContentPanels
         public PatientListPanel()
         {
             InitializeComponent();
-            Database.SocketConnection.OnPatientListAdd += onAdd;
-            Database.SocketConnection.OnPatientListUpdate += onUpdate;
-            Database.SocketConnection.OnPatientListRemove += onRemove;
 
             loadData();
 
@@ -33,24 +30,9 @@ namespace FinalsCollab.Forms.ContentPanels
         private void loadData()
         {
             dataGridView1.Rows.Clear();
-            List<PatientInformation> employees = PatientInformation.GetPatients();
+            List<PatientInformation> patients = PatientInformation.GetPatients();
 
-            employees.ForEach(addPatientToTable);
-        }
-
-        private void onAdd(JObject value)
-        {
-            addPatientToTable(PatientInformation.FromJObject(value));
-        }
-
-        public void onRemove(JObject value)
-        {
-            removeEmployeeFromTableByID(value["id"].ToObject<int>());
-        }
-
-        private void onUpdate(JObject value)
-        {
-            updatePatientFromTable(PatientInformation.FromJObject(value));
+            patients.ForEach(addPatientToTable);
         }
 
         private void addPatientToTable(PatientInformation patient)
@@ -59,11 +41,11 @@ namespace FinalsCollab.Forms.ContentPanels
 
             dataGridView1.Rows.Add(
                 patient.ID,
-                patient.Fullname,
+                patient.Name,
                 patient.Gender,
                 patient.Address,
                 patient.Birthday.ToString("MMMM d, yyyy"),
-                patient.BloodType,
+                patient.Bloodtype,
                 patient.MaritalStatus,
                 patient.NumberOfKids,
                 patient.Contact.Email,
@@ -86,11 +68,11 @@ namespace FinalsCollab.Forms.ContentPanels
                 {
                     DataGridViewRow updatedRow = (DataGridViewRow)row.Clone();
                     updatedRow.Cells[0].Value = patient.ID;
-                    updatedRow.Cells[1].Value = patient.Fullname;
+                    updatedRow.Cells[1].Value = patient.Name;
                     updatedRow.Cells[2].Value = patient.Gender;
                     updatedRow.Cells[3].Value = patient.Address;
                     updatedRow.Cells[4].Value = patient.Birthday.ToString("MMMM d, yyyy");
-                    updatedRow.Cells[5].Value = patient.BloodType;
+                    updatedRow.Cells[5].Value = patient.Bloodtype;
                     updatedRow.Cells[6].Value = patient.MaritalStatus;
                     updatedRow.Cells[7].Value = patient.NumberOfKids;
                     updatedRow.Cells[8].Value = patient.Contact.Email;
@@ -141,7 +123,7 @@ namespace FinalsCollab.Forms.ContentPanels
                 row.Cells["_marital_status"].Value.ToString(),
                 row.Cells["_number_of_kids"].Value.ToString(),
                 row.Cells["_bloodtype"].Value.ToString(),
-                PatientInformation.FromDatabase(id).TotalVisit.ToString(),
+                PatientInformation.GetPatient(id).TotalVisit.ToString(),
                 row.Cells["_email"].Value.ToString(),
                 row.Cells["_phone"].Value.ToString()
             );
@@ -168,7 +150,7 @@ namespace FinalsCollab.Forms.ContentPanels
             DataGridViewRow row = dataGridView1.SelectedRows[0];
             int id = (int)row.Cells["_id"].Value;
 
-            PatientInformation patient = PatientInformation.FromDatabase(id);
+            PatientInformation patient = PatientInformation.GetPatient(id);
             patient.DeleteFromDatabase();
         }
 
@@ -180,7 +162,7 @@ namespace FinalsCollab.Forms.ContentPanels
             DataGridViewRow row = dataGridView1.SelectedRows[0];
             int id = (int)row.Cells["_id"].Value;
 
-            PatientInformation patient = PatientInformation.FromDatabase(id);
+            PatientInformation patient = PatientInformation.GetPatient(id);
             Globals.AppState.MenuFormInstance.ShowFormDialog(new PatientForm(patient));
         }
 

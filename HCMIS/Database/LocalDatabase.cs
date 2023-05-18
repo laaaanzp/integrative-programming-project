@@ -57,9 +57,9 @@ namespace HCMIS.Database
             }
         }
 
-        public List<Employee> GetEmployees()
+        public List<EmployeeInformation> GetEmployees()
         {
-            List<Employee> employees = new List<Employee>();
+            List<EmployeeInformation> employees = new List<EmployeeInformation>();
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();

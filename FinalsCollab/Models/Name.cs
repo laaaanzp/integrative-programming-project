@@ -1,11 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FinalsCollab.Models
+﻿namespace FinalsCollab.Models
 {
     public class Name
     {
@@ -13,7 +6,6 @@ namespace FinalsCollab.Models
         public string Middlename { get; set; } = "";
         public string Lastname { get; set; } = "";
 
-        [JsonIgnore]
         public string Fullname
         {
             get
@@ -23,6 +15,13 @@ namespace FinalsCollab.Models
 
                 return $"{Firstname} {Middlename} {Lastname}";
             }
+        }
+
+        public Name(string firstname, string middlename, string lastname)
+        {
+            Firstname = firstname;
+            Middlename = middlename;
+            Lastname = lastname;
         }
     }
 }

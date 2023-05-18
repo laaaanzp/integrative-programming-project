@@ -48,31 +48,31 @@ namespace FinalsCollab
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            Account credentials = new Account()
+            Account credentials = new Account
+            (
+                usernameTextbox.Text,
+                passwordTextbox.Text
+            );
+
+            EmployeeInformation? employee = EmployeeInformation.GetEmployee(credentials);
+
+            if (employee == null)
             {
-                Username = usernameTextbox.Text,
-                Password = passwordTextbox.Text
-            };
-
-            try
-            {
-                EmployeeInformation employee = EmployeeInformation.FromLogin(credentials);
-                Globals.AppState.LoggedInEmployee = employee;
-
-                if (rememberCredentialsCheckBox.Checked)
-                {
-                    Properties.Settings.Default.Username = employee.Account.Username;
-                    Properties.Settings.Default.Password = employee.Account.Password;
-                    Properties.Settings.Default.Save();
-                }
-
-                new MenuForm().Show();
-                Hide();
+                MessageBox.Show("Invalid Username or Password!");
+                return;
             }
-            catch (CustomExceptions.InvalidCredentials ex)
+
+            Globals.AppState.LoggedInEmployee = employee;
+
+            if (rememberCredentialsCheckBox.Checked)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Properties.Settings.Default.Username = employee.Account.Username;
+                // Properties.Settings.Default.Password = employee.Account.Password;
+                // Properties.Settings.Default.Save();
             }
+
+            new MenuForm().Show();
+            Hide();
         }    
     }
 }

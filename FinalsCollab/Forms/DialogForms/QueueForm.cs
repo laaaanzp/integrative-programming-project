@@ -79,15 +79,15 @@ namespace FinalsCollab.Forms.DialogForms
 
         private Queue getFormDetails()
         {
-            return new Queue()
-            {
-                ID = 0,
-                PatientID = (int)patientIdNumericTextbox.Value,
-                BloodPressure = bloodPressureTextbox.Text,
-                WeightKG = (int)weightKgNumericTextbox.Value,
-                HeightFT = heightFtNumericTextbox.Value,
-                Reason = reasonComboBox.Value.ToLower()
-            };
+            return new Queue
+            (
+                0,
+                PatientInformation.GetPatient((int)patientIdNumericTextbox.Value),
+                bloodPressureTextbox.Text,
+                (int)weightKgNumericTextbox.Value,
+                heightFtNumericTextbox.Value,
+                reasonComboBox.Value.ToLower()
+            );
         }
 
         private bool isFormValid()
@@ -133,9 +133,9 @@ namespace FinalsCollab.Forms.DialogForms
 
             try
             {
-                PatientInformation patient = PatientInformation.FromDatabase(patientID);
+                PatientInformation patient = PatientInformation.GetPatient(patientID);
                 _patientID = patient.ID;
-                fullnameTextbox.Text = patient.Fullname;
+                fullnameTextbox.Text = patient.Name;
             }
             catch (CustomExceptions.DataNotFound ex)
             {

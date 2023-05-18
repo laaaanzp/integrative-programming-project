@@ -21,9 +21,6 @@ namespace FinalsCollab.Forms.ContentPanels
         {
             InitializeComponent();
 
-            Database.SocketConnection.OnQueueListAdd += onAdd;
-            Database.SocketConnection.OnQueueListRemove += onRemove;
-
             addButton.Enabled = deleteButton.Enabled =
                 Globals.AppState.LoggedInEmployee.Position == "admin" ||
                 Globals.AppState.LoggedInEmployee.Position == "nurse";
@@ -38,20 +35,11 @@ namespace FinalsCollab.Forms.ContentPanels
         private void loadData()
         {
             dataGridView1.Rows.Clear();
-            List<Queue> employees = Queue.GetQueues();
+            List<Queue> queue = Queue.GetQueues();
 
-            employees.ForEach(addQueueToTable);
+            queue.ForEach(addQueueToTable);
         }
 
-        private void onAdd(JObject value)
-        {
-            addQueueToTable(Queue.FromJObject(value));
-        }
-
-        public void onRemove(JObject value)
-        {
-            removeQueueFromTableByID(value["id"].ToObject<int>());
-        }
 
         private void addQueueToTable(Queue queue)
         {
@@ -60,7 +48,7 @@ namespace FinalsCollab.Forms.ContentPanels
 
             dataGridView1.Rows.Add(
                 queue.ID,
-                queue.Fullname,
+                queue.Patient.Name,
                 Globals.FuncTools.ToTitleCase(queue.Reason),
                 queue.BloodPressure,
                 queue.WeightKG.ToString(),

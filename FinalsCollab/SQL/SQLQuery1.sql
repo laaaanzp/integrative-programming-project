@@ -44,6 +44,30 @@ BEGIN
 		ON C.id = A.id;
 END
 
+CREATE PROCEDURE GetEmployee
+	@id SMALLINT
+AS
+BEGIN
+	SELECT 
+		I.id,
+		I.firstname,
+		I.middlename,
+		I.lastname,
+		I.position,
+		C.email,
+		C.phone,
+		A.username,
+		A.password
+	FROM
+		EmployeeInformation I
+	INNER JOIN EmployeeContact C
+		ON I.id = C.id
+	INNER JOIN EmployeeAccount A
+		ON C.id = A.id
+	WHERE
+		A.id = @id;
+END
+
 CREATE PROCEDURE EmployeeLogin
 	@username VARCHAR(50),
 	@password VARCHAR(50)
@@ -77,8 +101,8 @@ CREATE PROCEDURE EmployeeRegister
 	@position	VARCHAR(8),
 	@email		VARCHAR(250),
 	@phone		VARCHAR(12),
-	@username VARCHAR(50),
-	@password VARCHAR(50)
+	@username	VARCHAR(50),
+	@password	VARCHAR(50)
 AS
 BEGIN
 	INSERT INTO EmployeeInformation
@@ -346,3 +370,13 @@ BEGIN
 		deferred
 	FROM Record;
 END
+
+CREATE PROCEDURE RecordDelete
+	@id INT
+AS
+BEGIN
+	DELETE FROM Queue
+	WHERE id=@id;
+END
+
+EXEC GetEmployees;

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinalsCollab.CustomControls;
 using FinalsCollab.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace FinalsCollab.Forms.DialogForms
 {
@@ -71,7 +72,7 @@ namespace FinalsCollab.Forms.DialogForms
             usernameTextbox.Text = employee.Account.Username;
             passwordTextbox.Text = employee.Account.Password;
 
-            pictureBox1.Load(Database.DatabaseHandler.GetProfilePictureUrlByID(employee.ID));
+            // TODO: pictureBox1.Load(Database.DatabaseHandler.GetProfilePictureUrlByID(employee.ID));
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -84,7 +85,7 @@ namespace FinalsCollab.Forms.DialogForms
         {
             if (!isFormValid())
             {
-                MessageBox.Show("Please complete the form", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please complete the form!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -95,17 +96,19 @@ namespace FinalsCollab.Forms.DialogForms
                 switch (submitButton.Text)
                 {
                     case "SAVE":
-                        employee.UpdateToDatabase();
+                        // TODO: employee.UpdateToDatabase();
                         break;
                     case "ADD":
                         employee.AddToDatabase();
                         break;
                 }
                 
+                /* TODO 
                 if (pictureBox1.Image != null)
                     Database.DatabaseHandler.AddProfilePictureByID(employee.ID, pictureBox1.Image);
                 else
                     Database.DatabaseHandler.DeleteProfilePictureByID(employee.ID);
+                */
 
                 DialogResult = DialogResult.OK;
                 Close();
@@ -118,27 +121,27 @@ namespace FinalsCollab.Forms.DialogForms
 
         private EmployeeInformation getFormDetails()
         {
-            return new EmployeeInformation()
-            {
-                ID = (int)idNumericTextbox.Value,
-                Name = new Name()
-                {
-                    Firstname = firstnameTextbox.Text,
-                    Middlename = middlenameTextbox.Text,
-                    Lastname = lastnameTextbox.Text
-                },
-                Position = positionComboBox.Value.ToLower(),
-                Contact = new Contact()
-                {
-                    Email = emailTextbox.Text,
-                    Phone = phoneNumericTextbox.Value.ToString()
-                },
-                Account = new Account()
-                {
-                    Username = usernameTextbox.Text,
-                    Password = passwordTextbox.Text
-                }
-            };
+            return new EmployeeInformation
+            (
+                (int)idNumericTextbox.Value,
+                new Name
+                (
+                    firstnameTextbox.Text,
+                    middlenameTextbox.Text,
+                    lastnameTextbox.Text
+                ),
+                positionComboBox.Value.ToLower(),
+                new Account
+                (
+                    usernameTextbox.Text,
+                    passwordTextbox.Text
+                ),
+                new Contact
+                (
+                    emailTextbox.Text,
+                    phoneNumericTextbox.Value.ToString()
+                )
+            );
         }
 
         private bool isFormValid()

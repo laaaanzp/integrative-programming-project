@@ -1,5 +1,4 @@
 ﻿using FinalsCollab.Forms;
-using FinalsCollab.Forms.ContentPanels;
 using FinalsCollab.Models;
 
 namespace FinalsCollab.Globals
@@ -14,7 +13,13 @@ namespace FinalsCollab.Globals
 
     internal static class AppState
     {
-        public static EmployeeInformation LoggedInEmployee;
+        public static EmployeeInformation? LoggedInEmployee;
         public static MenuForm MenuFormInstance;
+    }
+
+    internal static class Config
+    {
+        public static string DatabaseLocation = Application.StartupPath + "DBHCMIS.mdf";
+        public static string ConnectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={DatabaseLocation};Integrated Security=True;";
     }
 }
